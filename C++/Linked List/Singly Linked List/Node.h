@@ -12,6 +12,8 @@ public:
 	}
 	~Node()
 	{
+		while(next)
+			delete next;
 	}
 	void set(int x)
 	{
