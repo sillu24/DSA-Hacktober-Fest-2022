@@ -18,6 +18,12 @@ public:
 		left = NULL;
 		right = NULL;
 	}
+	~Node(){
+	    if(left)
+		    delete left;
+	     if(right)
+		     delete right;
+	}
 };
 
 int main()
